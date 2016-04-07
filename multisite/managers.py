@@ -85,7 +85,7 @@ class SpanningCurrentSiteManager(managers.CurrentSiteManager):
         return model._meta.get_field_by_name(fieldname)[0].rel.to
 
 
-class PathAssistedCurrentSiteManager(models.CurrentSiteManager):
+class PathAssistedCurrentSiteManager(managers.CurrentSiteManager):
     """
     Deprecated: Use multisite.managers.SpanningCurrentSiteManager instead.
     """
